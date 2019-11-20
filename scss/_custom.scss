@@ -1,0 +1,92 @@
+// Variable overrides
+$dj-red:  #f72444;
+$dj-white: #ecebe7;
+$dj-blue: #6f9ff8; 
+$dj-gray: #191816;
+
+// General style overrides and custom classes
+body {
+  margin: 0;
+}
+h1 {
+  color: $dj-blue;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: $dj-white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  :hover {
+    color: $dj-red;
+  }
+}
+.dropdown-menu {
+  border-radius: 0;
+  margin-top: .7rem;
+  background-color: $dj-white;
+  :hover {
+    background-color: white;
+  }
+}
+.navbar-dark .navbar-toggler {
+  border: none;
+  .navbar-dark .navbar-toggler-icon:hover {
+    color: $dj-blue;
+  }
+}
+.modal-header {
+  background-color: $dj-gray;
+  color: $dj-white;
+  border-radius: 0;
+  border: none;
+  .close {
+    color: $dj-white;
+    font-size: 2em;
+    opacity: 1;
+  }
+  .close:hover {
+    color:$dj-red;
+  }
+}
+.modal-footer {
+  background-color: $dj-white;
+  border-radius: 0;
+  border: none;
+  .btn-primary {
+    background-color: $dj-blue;
+    border-radius: 0;
+    border: none;
+    :hover {
+      background-color: $dj-red;
+    }
+  }
+  .btn-secondary {
+    background-color: $dj-gray;
+    border-radius: 0;
+    border: none;
+    :hover {
+      background-color: $dj-red;
+    }
+  }
+}
+.modal-xl {
+  max-width: 99%;
+}
+.modal-body {
+  padding: 0;
+  border-radius: 0;
+  background-color: $dj-white;
+  input, button, select, optgroup, textarea {
+    color: $dj-gray;
+  }
+}
+.modal-content {
+  border-radius: 0;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: $dj-blue;
+  background-color: $dj-blue;
+}
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
