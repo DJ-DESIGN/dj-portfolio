@@ -10,7 +10,7 @@
             </b-col>
             <b-col lg="5" class="indust-worked">
               <div class="indust-list">
-                <h3>Industries I've Worked Worked With:</h3>
+                <h3>Industries I've Worked With:</h3>
                 <b-row>
                   <b-col>
                     <ul class="indust-list">
@@ -91,18 +91,36 @@ export default {
 .indust-worked {
   display: flex;
   align-self: center;
-  @media only screen and (max-width: 576px) {
-    padding-top: 2vh;
+  @media only screen and (max-width: 992px) {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 25%;
+    padding-right: 25%;
   }
-  .indust-list ul {
-    padding-top: 2vh;
-    list-style: none;
-    font-size: 1.2em;
-    li {
-      display: flex;
-      align-items: flex-start;
-      font-size: 1em;
-      padding-top: 1vh;
+  @media only screen and (max-width: 768px) {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+  }
+  @media only screen and (max-width: 576px) {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+    .indust-list {
+      padding-left: 2vh;
+      ul {
+      padding-top: 2vh;
+      list-style: none;
+      font-size: 1.2em;
+      li {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1em;
+        padding-top: 1vh;
+      }
     }
   }
   .dj-bullet {

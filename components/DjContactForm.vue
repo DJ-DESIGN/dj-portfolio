@@ -1,53 +1,33 @@
 <template>
 <div>
   <form
-  name="contact"
-  method="post"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
   class="dj-form-style"
-  action="/thank-you/">
-    <input type="hidden" name="form-name" value="ask-question" />
-    <b-form-group
-      id="djContactInputGroup1"
-      class="text-left"
-      >
-      <p class="hidden">
-        <label>Don’t fill this out:
-          <input name="bot-field">
-        </label>
-      </p>
-      <b-form-input
-        id="djContactInputName"
-        type="text"
-        size="lg"
-        required
-        placeholder="Enter your name" />
-    </b-form-group>
-    <b-form-group
-      id="djContactInputGroup2"
-      description="* I will never share your email with anyone else."
-      class="text-left"
-    >
-      <b-form-input
-        id="djContactInputEmail"
-        type="email"
-        placeholder="Enter your email"
-        required
-        />
-    </b-form-group>
-    <b-form-group
-      id="djContactInputGroup3"
-      class="text-left"
-      >
-      <b-form-textarea
-        id="djContactInputTextarea1"
-        size="lg"
-        placeholder="Enter your message"
-        rows="3"
-        max-rows="6"
+  name="Contact DJ"
+  method="POST"
+  netlify-honeypot="bot-field"
+  action="/thank-you"
+  netlify
+  >
+    <input
+      id="djContactInputName"
+      type="text"
+      size="lg"
+      required
+      placeholder="Enter your name" />
+    <input
+      id="djContactInputEmail"
+      type="email"
+      placeholder="Enter your email"
+      required
       />
-  </b-form-group>
+    <textarea
+      id="djContactInputTextarea"
+      size="lg"
+      placeholder="Enter your message"
+      rows="3"
+      max-rows="6"
+    />
+    <input type="hidden" name="Contact DJ" value="contact-form" />
   <b-button class="btn-block rounded-0 dj-sumbit-btn" type="submit">Submit</b-button>
   <p class="pt-4">Direct email: <a href="mailto:dj@derekjohnston.com">dj@derekjohnston.com</a></p>
   </form>
@@ -61,9 +41,9 @@ export default {
   data () {
     return {
       form: {
-        email: '',
-        name: '',
-        message: ''
+        djContactInputName: '',
+        djContactInputEmail: '',
+        djContactInputTextarea: ''
       },
       show: true
     }
@@ -76,9 +56,9 @@ export default {
     onReset (evt) {
       evt.preventDefault()
       /* Reset form values */
-      this.form.email = ''
-      this.form.name = ''
-      this.form.message = ''
+      this.form.djContactInputName = ''
+      this.form.djContactInputEmail = ''
+      this.form.djContactInputTextarea = ''
       /* Trick to reset/clear native browser form validation state */
       this.show = false
       this.$nextTick(() => {

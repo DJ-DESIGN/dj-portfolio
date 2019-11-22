@@ -27,7 +27,7 @@
       <DjAbout />
     </div>
     <div class="p-5 bg-white mx-auto text-center">
-      <b-row>
+      <b-row class="pt-4">
         <b-col>
           <h1 class="pb-3">What I Deliver</h1>
         </b-col>
@@ -69,7 +69,7 @@
         <b-col
           v-for="(post, index) in posts"
           :key="index"
-          md="4"
+          lg="4"
           class="item"
         >
           <article-preview :post="post" />
