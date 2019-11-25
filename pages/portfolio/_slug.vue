@@ -3,7 +3,7 @@
     <header class="container-fluid dj-page-header pt-5">
       <h1 class="pt-5">{{ post.fields.client }}</h1>
     </header>
-    <section class="container-fluid bg-dj-white pb-5">
+    <section class="container-fluid bg-dj-white">
       <!-- First Image -->
       <b-row>
         <b-col>
@@ -92,10 +92,10 @@
         </b-col>
         <b-col md="3"></b-col>
       </b-row>
-      <b-row class="bg-white pt-4">
+      <b-row class="bg-white pt-5">
         <b-col>
           <div
-            class="tags mx-auto text-center p-2">
+            class="tags mx-auto text-center p-3">
             <nuxt-link
               v-for="tag in post.fields.tags"
               :key="tag"
@@ -133,6 +133,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+  background-color: $dj-white;
+}
 .project-header {
   max-width:100%;
   background-color: $dj-gray;

@@ -1,14 +1,13 @@
 <template>
   <div>
     <div class="dj-head">
-      <div class="container-fluid dj-bg">
+      <div class="dj-bg">
         <div class="dj-bg-darken">
           <b-row class="dj-reveal">
             <b-col md="1"></b-col>
             <b-col md="10" class="p-2">
               <div class="dj-logo-hero">
-                <b-img
-                  fluid-grow
+                <img
                   src="../assets/img/brand/logo/SVG/derek-johnston-design-logo.svg"
                   />
                 <h1
@@ -120,41 +119,80 @@ export default {
 </script>
 
 <style lang="scss">
+.page-enter-active, .page-leave-active {
+  transition: all .30s ease-out;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
 .dj-head {
   overflow: hidden;
   position: relative;
   min-height: 93vh;
-  background: #000;
   color: #fff;
+  min-width: 100%;
+  padding: 0;
   @media only screen and (max-width: 576px) {
     min-height: 40vh;
   }
 }
 .dj-bg-darken {
-  background-color: rgba(0, 0, 0, 0.8);
   min-height: 93vh;
+  min-width: 100%;
+  padding: 0;
+  animation-name: dj-bg-darken;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes dj-bg-darken{
+  from {
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+  to {
+    background-color: rgba(0, 0, 0, 0.86);
+  }
 }
 .dj-bg {
-  background-image: url('https://res.cloudinary.com/derek-johnston-design/image/upload/v1571022993/movie-theater-audience-with-3d-glasses_kqgkub.jpg');
   background-color: black;
   padding: 0;
-  margin: 0;
+  animation-name: dj-bg;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  background-image: url('https://res.cloudinary.com/derek-johnston-design/image/upload/v1571022993/movie-theater-audience-with-3d-glasses_kqgkub.jpg')
+}
+@keyframes dj-bg {
+  from {
+    background-image: url('https://res.cloudinary.com/derek-johnston-design/image/upload/v1574536633/movie-theater-audience-with-3d-glassesMIX_o0am0s.jpg');
+    background-blend-mode:screen;
+    opacity: 1;
+    }
+  to {
+    background-image: url('https://res.cloudinary.com/derek-johnston-design/image/upload/v1574536633/movie-theater-audience-with-3d-glassesMIX_o0am0s.jpg');
+    opacity: 1;
+    background-blend-mode: normal;
+  }
 }
 .dj-reveal {
   background-image: url('../assets/img/graphics/SVG/dj-hero-bg-reveal-fade.svg');
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: contain;
   margin-bottom: -1px;
-  min-height: 94vh;
+  min-height: 93vh;
+  min-width: 100%;
+  opacity: 1;
 }
 .dj-logo-hero {
   padding: 20vh 1vh;
   text-align: center;
-  animation-name: djlogo-slide;
-  animation-duration: 1;
+  animation-name: dj-logo-hero;
+  animation-duration: 1s;
   animation-delay: 1s;
-  animation-iteration-count: 1;
   animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
   @media only screen and (max-width: 576px) {
       padding: 10vh 2vh;
     }
@@ -171,9 +209,10 @@ export default {
     }
   }
 }
-@keyframes djlogo-slide {
-  from { margin-top: 100px; opacity: 0; }
-  to { margin-top: 0px; opacity: 1; }
+@keyframes dj-logo-hero {
+  from {opacity: 0; }
+  1% { opacity: .1; }
+  to { opacity: 1; }
 }
 .dj-about {
   background-color: $dj-white;

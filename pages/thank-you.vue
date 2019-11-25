@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid dj-bg-white">
     <b-row class="pb-5 pt-5 mx-auto text-center">
       <b-col class="pt-5">
         <div class="pt-5">
@@ -26,5 +26,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

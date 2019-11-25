@@ -29,21 +29,19 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '$dj-blue' },
   /*
   ** Global CSS
   */
   css: [
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    'aos/dist/aos.css'
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '~/plugins/fontawesome.js',
-    '~/plugins/viewImageLightbox.js',
-    { src: '~/plugins/aos.js', ssr: false }
+    '~/plugins/viewImageLightbox.js'
   ],
   /*
   ** Nuxt.js dev-modules

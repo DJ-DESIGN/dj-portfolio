@@ -19,7 +19,7 @@
                     <input class="fp-form-group-input" type="text" name="name" placeholder="Enter your name:" />
                   </p>
                   <p>
-                    <input class="fp-form-group-input" type="email" name="email" placeholder="Enter your email:" />
+                    <input class="fp-form-group-input" type="email" name="email" placeholder="Enter your email:" required />
                   </p>
                   <p class="dj-white-text">* I don't share your information with 3rd parties.</p>
                 </b-col>
@@ -83,13 +83,13 @@
             <b-col>
               <input type="hidden" name="form-name" value="dj-quote" />
               <p>
-                  <input type="text" name="name" placeholder="Name:" />
+                  <input type="text" name="name" placeholder="Name:" required />
               </p>
               <p>
                   <input type="text" name="company" placeholder="Company:" />
               </p>
               <p>
-                  <input type="email" name="email" placeholder="Contact email:" />
+                  <input type="email" name="email" placeholder="Contact email:" required />
               </p>
               <p class="dj-gray-text">* I don't share your information with 3rd parties.</p>
               <h6 class="pt-2 dj-blue-text">Project Type:</h6>
@@ -105,7 +105,7 @@
                   <input type="text" name="deadline" placeholder="How soon do you need this?" />
               </p>
               <p>
-                  <textarea name="project-info" rows="4" placeholder="Describe your project..." ></textarea>
+                  <textarea name="project-info" rows="4" placeholder="Describe your project..." required ></textarea>
               </p>
               <p class="hidden">
                   <label>Don’t fill this out:

@@ -1,6 +1,6 @@
 <template>
     <b-container-fluid>
-        <b-row class="p-0 m-0">
+        <b-row class="p-0 m-0 dj-bg-white">
           <b-col md="1"></b-col>
           <b-col md="5" class="dj-testimonial-conatiner">
             <div class="dj-slide">

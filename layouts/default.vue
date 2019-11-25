@@ -37,7 +37,7 @@ html {
   margin: 0;
 }
 body {
-  background-color: $dj-white;
+  background-color: black;
 }
 h1 {
   color: $dj-blue;
@@ -147,69 +147,5 @@ a {
   .tag-title {
     padding: 4vh;
   }
-}
-@keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@-moz-keyframes fadein { /* Firefox */
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@-o-keyframes fadein { /* Opera */
-  from {
-      opacity:0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-@keyframes fadeInUp {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-@-webkit-keyframes fadeInUp {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
-}
-.animatedFadeInUp {
-  opacity: 0
-}
-.fadeInUp {
-  opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
 }
 </style>
