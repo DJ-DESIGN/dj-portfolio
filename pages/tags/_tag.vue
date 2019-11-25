@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="container-fluid dj-page-header pt-5">
-      <h2 class="pt-5">#{{ tag }}</h2>
+      <h1 class="pt-5 dj-red-text">#{{ tag }}</h1>
     </header>
     <section class="container-fluid dj-page-section pb-5">
       <b-row>

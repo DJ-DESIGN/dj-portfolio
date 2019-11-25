@@ -247,19 +247,6 @@ export default {
   65% { transform: translate(0, 15px); }
   to { transform: translate(0, -0px); }
 }
-.floating-first:hover {
-  animation-name: floating-first-hover;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-@keyframes floating-first-hover {
-  from { transform: translate(0,  0px); }
-  25% { transform: translate(0, -95px); }
-  to { transform: translate(0, 0px); }
-}
 .floating-second {
   animation-name: floating-second;
   animation-duration: 3.5s;
