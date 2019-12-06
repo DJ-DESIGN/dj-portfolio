@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="container-fluid dj-page-header">
-      <h1>LOGO</h1>
+      <h1 class="pt-5">LOGO</h1>
     </header>
     <section class="container-fluid dj-page-section pt-2 pb-2">
         <b-row class="dj-logo-row">

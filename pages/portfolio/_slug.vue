@@ -18,7 +18,8 @@
       </b-row>
       <!-- First Row Description -->
       <b-row>
-        <b-col class="p-4">
+        <b-col md="2"></b-col>
+        <b-col md="8">
           <div class="project-description">
             <!--<time class="tiny">{{ ( new Date(post.fields.publishDate)).toDateString() }}</time>-->
             <div class="title">Client:</div>
@@ -27,14 +28,15 @@
             <h5>{{ post.fields.industry }}</h5>
             <div class="title">Company Description:</div>
             <p>{{post.fields.description }}</p>
-            <div class="title">Project Summary:</div>
-            <vue-markdown>{{ post.fields.projectSummary }}</vue-markdown>
             <div class="title">Role:</div>
             <vue-markdown>{{ post.fields.role }}</vue-markdown>
             <div class="title">Tools Used:</div>
             <vue-markdown>{{ post.fields.tools }}</vue-markdown>
+            <div class="title">Project Summary:</div>
+            <vue-markdown>{{ post.fields.projectSummary }}</vue-markdown>
           </div>
         </b-col>
+        <b-col md="2"></b-col>
       </b-row>
       <!-- Row 2 -->
       <b-row class="p-2">
@@ -93,7 +95,7 @@
       <b-row>
         <b-col class="text-center">
           <div class="pb-5">
-            <a class="dj-button" href="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </a>
+            <nuxt-link class="dj-button" to="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </nuxt-link>
           </div>
         </b-col>
       </b-row>
@@ -149,7 +151,7 @@ section {
   background-color: $dj-gray;
 }
 .project-description {
-  padding: 2vh 4vh;
+  padding: 2vh;
   @media only screen and (max-width: 576px) {
     padding: 0;
   }

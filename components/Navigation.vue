@@ -51,6 +51,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.navbar-collapse {
+  @media only screen and (max-width: 767px) {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+}
 .dj-nav {
   background-color: $dj-gray;
   color: $dj-white;
@@ -78,7 +84,7 @@ export default {
     .dj-icon {
       font-size: 1.4em;
       :hover {
-        color: $dj-blue
+        color: $dj-blue;
       }
     }
   }

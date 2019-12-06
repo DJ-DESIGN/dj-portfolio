@@ -44,8 +44,7 @@
         <div class="quote-box">
           <h3 class="dj-white-text p-2">Need a quote?</h3>
           <b-button class="btn-block rounded-0 dj-quote-btn" v-b-modal.quote-modal>
-            <font-awesome-icon :icon="['fas', 'angle-double-right']"/> Yes, I would like a quote
-          </b-button>
+            <font-awesome-icon :icon="['fas', 'angle-double-right']"/> Yes I would please </b-button>
         </div>
       </b-col>
       <b-col class="dj-bg-gray dj-foot-last" xl="2">

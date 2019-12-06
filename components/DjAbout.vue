@@ -29,9 +29,6 @@
         <p class="pb-4">
           Design is not just about creating amazing digital journys or enhanced visual aesthetic, it is also about resolving bottlenecks and stagnant user interaction to optimize paths to success while reaching end goals.
         </p>
-        <div class="pt-5">
-          <a class="dj-button" href="#contact"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> NEED A QUOTE?</a>
-        </div>
       </b-col>
       <b-col lg="5">
         <FloatingGlasses />

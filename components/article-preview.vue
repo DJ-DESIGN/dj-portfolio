@@ -18,9 +18,9 @@
           </div>
           </nuxt-link>
           <div class="dj-card-info">
-            <div>
+            <div class="card-info-section">
               <b>Client:</b>
-              <h4 class="pt-0">
+              <h4>
                 <nuxt-link
                 :to="{ name: 'portfolio-slug',
                 params: { slug: post.fields.slug }}"
@@ -28,14 +28,16 @@
                 </nuxt-link>
               </h4>
             </div>
-            <div>
+            <div class="card-info-section">
               <b>Industry:</b>
-              <h5 class="pt-0">
+              <h5>
                 {{ post.fields.industry }}
               </h5>
             </div>
-            <b>About the company:</b>
-            <p>{{ post.fields.description }}</p>
+            <div class="card-info-section">
+              <b>About the company:</b>
+              <p>{{ post.fields.description }}</p>
+            </div>
             <div
               class="tags">
               <div class="title">#tags:</div>
@@ -87,6 +89,9 @@ export default {
   }
   h5 {
     color: $dj-red;
+  }
+  .card-info-section {
+    padding-bottom: 1vh;
   }
 }
 //* Thumbnail Hover Styling - START *//

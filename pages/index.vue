@@ -76,7 +76,7 @@
       <b-row class="pb-4">
         <b-col class="text-center">
           <div class="pb-5">
-            <a class="dj-button" href="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </a>
+            <nuxt-link class="dj-button" to="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </nuxt-link>
           </div>
         </b-col>
       </b-row>

@@ -182,7 +182,6 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
-  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-first {
   from { transform: translate(0,  0px); }
@@ -196,7 +195,6 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
-  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-second {
   from { transform: translate(0,  0px); }
@@ -210,7 +208,6 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
-  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-third {
   from { transform: translate(0,  0px); }
@@ -224,7 +221,6 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
-  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-fourth {
   from { transform: translate(0,  0px); }
@@ -238,7 +234,6 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
-  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-fifth {
   from { transform: translate(0,  0px); }
@@ -281,7 +276,7 @@ export default {
 .cls-7{fill:#d6d6d6;}
 .cls-8,.cls-9{opacity:0.5;}
 .cls-10{font-size:14px;}
-.cls-10,.cls-16,.cls-28,.cls-34,.cls-48,.cls-52,.cls-58,.cls-62{font-family:CosmicLagerRegular, Cosmic Lager;}
+.cls-10,.cls-16,.cls-28,.cls-34,.cls-48,.cls-52,.cls-58,.cls-62{font-family: 'Big Shoulders Text', sans-serif; text-transform: uppercase; font-weight: 700;}
 .cls-11{letter-spacing:-0.04em;}
 .cls-12{letter-spacing:-0.03em;}
 .cls-13{letter-spacing:0.03em;}
@@ -298,7 +293,7 @@ export default {
 .cls-24{letter-spacing:-0.04em;}
 .cls-25{letter-spacing:0.03em;}
 .cls-26{letter-spacing:-0.05em;}
-.cls-27,.cls-57{font-family:MyriadPro-Regular, Myriad Pro;}
+.cls-27,.cls-57{font-family: 'Big Shoulders Text', sans-serif;}
 .cls-28{font-size:11.24px;}
 .cls-29{letter-spacing:-0.05em;}
 .cls-30{letter-spacing:-0.05em;}
