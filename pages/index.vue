@@ -21,7 +21,6 @@
         </div>
       </div>
     </div>
-    <a name="about"></a>
     <div class="container-fluid dj-about">
       <DjAbout />
     </div>
@@ -72,6 +71,13 @@
           class="item"
         >
           <article-preview :post="post" />
+        </b-col>
+      </b-row>
+      <b-row class="pb-4">
+        <b-col class="text-center">
+          <div class="pb-5">
+            <a class="dj-button" href="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </a>
+          </div>
         </b-col>
       </b-row>
     </section>
@@ -220,10 +226,6 @@ export default {
 .eye-con {
   font-size: 2em;
   color: $dj-gray;
-}
-h5 {
-  background-color: $dj-gray;
-  color: $dj-white;
 }
 section {
   background-color: $dj-white;

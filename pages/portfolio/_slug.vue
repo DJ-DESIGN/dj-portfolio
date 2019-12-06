@@ -1,45 +1,44 @@
 <template>
-  <div>
+  <div class="dj-bg-white">
     <header class="container-fluid dj-page-header pt-5">
       <h1 class="pt-5">{{ post.fields.client }}</h1>
     </header>
-    <section class="container-fluid bg-dj-white">
+    <section class="container">
       <!-- First Image -->
       <b-row>
         <b-col>
           <img
-              :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=300'"
-              :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=250&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1000&fit=fill 2000w`"
+              :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=00'"
+              :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=650&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1000&fit=fill 2000w`"
               size="100vw"
               :alt="post.fields.heroImage.fields.description"
               style="max-width:100%; padding-top: 2vh;"
             >
         </b-col>
       </b-row>
-      <!-- First Row -->
-      <b-row class="pt-5 pb-5 mx-auto">
-        <b-col md="1"></b-col>
-        <b-col md="5" class="align-self-center pt-5">
+      <!-- First Row Description -->
+      <b-row>
+        <b-col class="p-4">
           <div class="project-description">
             <!--<time class="tiny">{{ ( new Date(post.fields.publishDate)).toDateString() }}</time>-->
-            <p>Client:</p>
-            <h1>{{ post.fields.client }}</h1>
-            <p>{{ post.fields.summary }}</p>
-          </div>
-          <div class="copy">
-            <vue-markdown>{{post.fields.description }}</vue-markdown>
+            <div class="title">Client:</div>
+            <h4>{{ post.fields.client }}</h4>
+            <div class="title">Industry:</div>
+            <h5>{{ post.fields.industry }}</h5>
+            <div class="title">Company Description:</div>
+            <p>{{post.fields.description }}</p>
+            <div class="title">Project Summary:</div>
+            <vue-markdown>{{ post.fields.projectSummary }}</vue-markdown>
+            <div class="title">Role:</div>
+            <vue-markdown>{{ post.fields.role }}</vue-markdown>
+            <div class="title">Tools Used:</div>
+            <vue-markdown>{{ post.fields.tools }}</vue-markdown>
           </div>
         </b-col>
-        <b-col md="5" class="align-self-center pt-5">
-          <div>
-            <p>{{ post.fields.description }}</p>
-          </div>
-        </b-col>
-        <b-col md="1"></b-col>
       </b-row>
       <!-- Row 2 -->
       <b-row class="p-2">
-        <b-col md="6" class="p-2 mx-auto presentation-imgs">
+        <b-col class="p-2 mx-auto presentation-imgs">
           <!-- Third Client Image -->
           <div>
             <img
@@ -65,19 +64,18 @@
           <div>
             <img
               :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
-              :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=250&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1000&fit=fill 2000w`"
+              :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=650&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1000&fit=fill 2000w`"
               size="100vw"
               :alt="post.fields.heroImage.fields.description"
               style="max-width:100%; padding-top: 2vh;"
             >
           </div>
-        </b-col>
-        <b-col md="6" class="p-2 mx-auto presentation-imgs">
           <!-- Second Image START-->
           <div>
             <img
               :src="post.fields.imageOne.fields.file.url"
               class="image-one"
+              fluid
             >
           </div>
           <!-- Second Image END-->
@@ -92,8 +90,18 @@
         </b-col>
         <b-col md="3"></b-col>
       </b-row>
+      <b-row>
+        <b-col class="text-center">
+          <div class="pb-5">
+            <a class="dj-button" href="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </a>
+          </div>
+        </b-col>
+      </b-row>
+    </section>
+    <div class="container-fluid">
       <b-row class="bg-white pt-5">
         <b-col>
+          <h5 class="text-center dj-blue-text">#tags</h5>
           <div
             class="tags mx-auto text-center p-3">
             <nuxt-link
@@ -104,7 +112,7 @@
           </div>
         </b-col>
       </b-row>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -141,14 +149,24 @@ section {
   background-color: $dj-gray;
 }
 .project-description {
-  vertical-align: middle;
-  align-self: center;
-  h1 {
+  padding: 2vh 4vh;
+  @media only screen and (max-width: 576px) {
+    padding: 0;
+  }
+  .title {
+    padding: 2vh 0 .5vh 0;
+    font-weight: 600;
+  }
+  h4 {
+    color: $dj-blue;
+  }
+  h5 {
     color: $dj-red;
   }
 }
 .presentation-imgs img{
   padding-bottom: 2vh;
+  width: 100%;
 }
 .tags {
     padding : 1em 0;

@@ -19,7 +19,7 @@
           </nuxt-link>
           <div class="dj-card-info">
             <div>
-              <p>Client:</p>
+              <b>Client:</b>
               <h4 class="pt-0">
                 <nuxt-link
                 :to="{ name: 'portfolio-slug',
@@ -29,14 +29,16 @@
               </h4>
             </div>
             <div>
-              <p>Industry:</p>
-              <h4 class="pt-0">
+              <b>Industry:</b>
+              <h5 class="pt-0">
                 {{ post.fields.industry }}
-              </h4>
+              </h5>
             </div>
-            <b-card-text>{{ post.fields.description }}</b-card-text>
+            <b>About the company:</b>
+            <p>{{ post.fields.description }}</p>
             <div
               class="tags">
+              <div class="title">#tags:</div>
               <nuxt-link
                 v-for="tag in post.fields.tags"
                 :key="tag"
@@ -82,6 +84,9 @@ export default {
   }
   a {
     text-decoration: none;
+  }
+  h5 {
+    color: $dj-red;
   }
 }
 //* Thumbnail Hover Styling - START *//
@@ -156,6 +161,10 @@ export default {
 .tags {
   padding : 1vh;
   margin-bottom: 1vh;
+  .title {
+    font-size: .9em;
+    font-weight: 600;
+  }
 }
 .tag:link,
 .tag:visited {
@@ -163,11 +172,11 @@ export default {
   color: $dj-red;
   text-decoration: none;
   display: inline-block;
-  padding: .33333rem .5rem;
+  padding: 0;
   line-height: 1;
   border-radius: 2px;
   border: 0px solid #A0A0A0;
-  margin: .2em .3em;
+  margin: .4em .5em;
 }
 
 .tag:active,

@@ -88,6 +88,15 @@ export default {
   },
   generate: {
     routes: [
+      '/tags/web',
+      '/tags/branding',
+      '/tags/logo',
+      '/tags/graphic',
+      '/tags/html',
+      '/tags/javascript',
+      '/tags/css',
+      '/tags/print',
+      '/tags/feature',
       '/portfolio/fempaq',
       '/portfolio/cboe',
       '/portfolio/poplar-grove',

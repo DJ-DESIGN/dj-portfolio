@@ -11,7 +11,7 @@
     <b-collapse class="mx-auto" id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto fp-menu-items">
         <b-nav-item class="dj-nav-item"><nuxt-link to="/">HOME</nuxt-link></b-nav-item>
-        <b-nav-item class="dj-nav-item"><nuxt-link to="/#about">ABOUT</nuxt-link></b-nav-item>
+        <b-nav-item class="dj-nav-item" href="/#about">ABOUT</b-nav-item>
         <b-nav-item class="dj-nav-item"><nuxt-link to="/portfolio">PORTFOLIO</nuxt-link></b-nav-item>
         <b-nav-item-dropdown class="dj-nav-dropdown" id="dropdown-1" text="WORK">
           <b-dropdown-item><nuxt-link class="dj-nav-dropdown-item" to="/tags/web">Web</nuxt-link></b-dropdown-item>
@@ -24,7 +24,7 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto dj-socials">
-        <b-nav-item href="https://www.linkedin.com/" class="dj-icon" target="_blank" ><font-awesome-icon :icon="['fab', 'linkedin']"/></b-nav-item>
+        <b-nav-item href="https://www.linkedin.com/in/derek-johnston-80549514" class="dj-icon" target="_blank" ><font-awesome-icon :icon="['fab', 'linkedin']"/></b-nav-item>
         <b-nav-item href="https://www.instagram.com/" class="dj-icon" target="_blank" ><font-awesome-icon :icon="['fab', 'instagram']"/></b-nav-item>
       </b-navbar-nav>
     </b-collapse>

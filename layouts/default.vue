@@ -134,6 +134,7 @@ a {
 .dj-page-header {
   background-color: $dj-gray;
   padding: 4vh;
+  text-align: center;
   h1, h2 {
     color: $dj-red;
     font-size: 2em;

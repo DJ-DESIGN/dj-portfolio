@@ -182,6 +182,7 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
+  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-first {
   from { transform: translate(0,  0px); }
@@ -195,6 +196,7 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
+  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-second {
   from { transform: translate(0,  0px); }
@@ -208,6 +210,7 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
+  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-third {
   from { transform: translate(0,  0px); }
@@ -221,6 +224,7 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
+  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-fourth {
   from { transform: translate(0,  0px); }
@@ -234,6 +238,7 @@ export default {
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
+  font-family: 'Big Shoulders Text', sans-serif;
 }
 @keyframes floating-fifth {
   from { transform: translate(0,  0px); }

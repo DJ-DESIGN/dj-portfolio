@@ -4,6 +4,21 @@ $dj-white: #ecebe7;
 $dj-blue: #6f9ff8; 
 $dj-gray: #191816;
 
+$primary:       #6f9ff8;
+$secondary:     #f72444;
+$light:         $dj-white !default;
+$dark:          $dj-gray !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    #6f9ff8,
+    "secondary":  #f72444
+  ),
+  $theme-colors
+);
+
 // General style overrides and custom classes
 body {
   margin: 0;
