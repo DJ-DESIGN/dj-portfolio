@@ -1,43 +1,48 @@
 <template>
-    <div>
-        <b-form
+  <div>
+    <b-form
+      name="newsletter"
+      action="/thank-you/"
+      method="post"
+      data-netlify-honeypot="bot-field"
+      class="dj-form-style"
+    >
+      <b-form-group
+        id="djNewsletterInputGroup2"
+        class="text-left"
+      >
+        <input
+          type="hidden"
           name="newsletter"
-          action="/thank-you/"
-          method="post"
-          data-netlify-honeypot="bot-field"
-          class="dj-form-style"
-          >
-            <b-form-group
-            id="djNewsletterInputGroup2"
-            class="text-left"
-            >
-              <input type="hidden" name="newsletter" value="ask-another-question" />
-              <p class="hidden">
-                <label>Don’t fill this out:
-                  <input name="bot-field">
-                </label>
-              </p>
-              <b-form-input
-                id="djNewsletterInputName"
-                type="text"
-                size="lg"
-                placeholder="Enter your name" />
-            </b-form-group>
-            <b-form-group
-            id="djNewsletterInputGroup2"
-            description="* I will never share your email with anyone else."
-            class="text-left"
-            >
-            <b-form-input
-                id="djNewsletterInputEmail"
-                type="email"
-                size="lg"
-                placeholder="Enter your email"
-                />
-            </b-form-group>
-          <b-button class="btn-block rounded-0 dj-sumbit-btn" type="submit">Sign me up!</b-button>
-        </b-form>
-    </div>
+          value="ask-another-question"
+        >
+        <p class="hidden">
+          <label>Don’t fill this out:
+            <input name="bot-field">
+          </label>
+        </p>
+        <b-form-input
+          id="djNewsletterInputName"
+          type="text"
+          size="lg"
+          placeholder="Enter your name"
+        />
+      </b-form-group>
+      <b-form-group
+        id="djNewsletterInputGroup2"
+        description="* I will never share your email with anyone else."
+        class="text-left"
+      >
+        <b-form-input
+          id="djNewsletterInputEmail"
+          type="email"
+          size="lg"
+          placeholder="Enter your email"
+        />
+      </b-form-group>
+      <b-button class="btn-block rounded-0 dj-sumbit-btn" type="submit">Sign me up!</b-button>
+    </b-form>
+  </div>
 </template>
 
 <script>

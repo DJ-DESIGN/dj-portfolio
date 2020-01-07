@@ -27,30 +27,38 @@
     <div class="p-5 bg-white mx-auto text-center">
       <b-row class="pt-4">
         <b-col>
-          <h1 class="pb-3">What I Deliver</h1>
+          <h1 class="pb-3">
+            What I Deliver
+          </h1>
         </b-col>
       </b-row>
       <b-row class="text-center pb-3">
         <b-col md="4">
           <div class="p-2">
-            <span class="eye-con"><font-awesome-icon :icon="['fas', 'eye']"/></span>
+            <span class="eye-con"><font-awesome-icon :icon="['fas', 'eye']" /></span>
           </div>
           <h2>Visual Design</h2>
-          <p class="text-center p-2">Branding– logo, color palette, identity, style guide-book.  Packaging– lables, tags, boxed, containers, foods, bottles, clothing.  Print– business cards, brochures, folders, magazine and newspaper, poster, presentations.</p>
+          <p class="text-center p-2">
+            Branding– logo, color palette, identity, style guide-book.  Packaging– labels, tags, boxed, containers, foods, bottles, clothing.  Print– business cards, brochures, folders, magazine and newspaper, poster, presentations.
+          </p>
         </b-col>
         <b-col md="4">
           <div class="p-2">
-            <span class="eye-con"><font-awesome-icon :icon="['fas', 'sitemap']"/></span>
+            <span class="eye-con"><font-awesome-icon :icon="['fas', 'sitemap']" /></span>
           </div>
           <h2>User Experience Design</h2>
-          <p class="text-center p-2">Static and dynamic websites, single-page web applications, information architecure, wire-framing, email marketing campaigns, user engagment strategy, user flow, visual aesthetics, ecommerce.</p>
+          <p class="text-center p-2">
+            Static and dynamic websites, single-page web applications, information architecture, wireframing, email marketing campaigns, user engagement strategy, user flow, visual aesthetics, ecommerce.
+          </p>
         </b-col>
         <b-col md="4">
           <div class="p-2">
-            <span class="eye-con"><font-awesome-icon :icon="['fas', 'th']"/></span>
+            <span class="eye-con"><font-awesome-icon :icon="['fas', 'th']" /></span>
           </div>
           <h2>User Interface Design</h2>
-          <p class="text-center p-2">Interactive prototyping, dynamic components, static mock-ups, single and multi-page forms, flow-chart, sitemaps, navigation, learning managment systems.</p>
+          <p class="text-center p-2">
+            Interactive prototyping, dynamic components, static mock-ups, single and multi-page forms, flow-chart, sitemaps, navigation, learning management systems.
+          </p>
         </b-col>
       </b-row>
     </div>

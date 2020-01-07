@@ -1,43 +1,45 @@
 <template>
-    <b-container-fluid>
-        <b-row class="p-0 m-0 dj-bg-white">
-            <b-col lg="6" class="dj-bottom-left-image">
-                <div class="dj-bottom-left-reveal">
-                  <div class="dj-test-reveal-text-left">
-                    <h1 class="dj-3d-text">LET'S<br>BUILD<br>SOMETHING<br>AMAZING</h1>
-                  </div>
-                </div>
+  <b-container-fluid>
+    <b-row class="p-0 m-0 dj-bg-white">
+      <b-col lg="6" class="dj-bottom-left-image">
+        <div class="dj-bottom-left-reveal">
+          <div class="dj-test-reveal-text-left">
+            <h1 class="dj-3d-text">
+              LET'S<br>BUILD<br>SOMETHING<br>AMAZING
+            </h1>
+          </div>
+        </div>
+      </b-col>
+      <b-col lg="5" class="indust-worked">
+        <div class="indust-list">
+          <h3>Industries I've Worked With:</h3>
+          <b-row>
+            <b-col>
+              <ul class="indust-list">
+                <li
+                  v-for="(djlist1,index) in djlist1s"
+                  :key="index"
+                >
+                  <span class="dj-bullet"><font-awesome-icon style="display:inline;" :icon="['fas', 'check']" /></span> {{ djlist1 }}
+                </li>
+              </ul>
             </b-col>
-            <b-col lg="5" class="indust-worked">
-              <div class="indust-list">
-                <h3>Industries I've Worked With:</h3>
-                <b-row>
-                  <b-col>
-                    <ul class="indust-list">
-                      <li
-                      v-for="(djlist1,index) in djlist1s"
-                      :key=index
-                      >
-                        <span class="dj-bullet"><font-awesome-icon style="display:inline;" :icon="['fas', 'check']"/></span> {{djlist1}}
-                      </li>
-                    </ul>
-                  </b-col>
-                  <b-col>
-                    <ul class="indust-list">
-                      <li
-                      v-for="(djlist2,index) in djlist2s"
-                      :key=index
-                      >
-                        <span class="dj-bullet"><font-awesome-icon style="display:inline;" :icon="['fas', 'check']"/></span> {{djlist2}}
-                      </li>
-                    </ul>
-                  </b-col>
-                </b-row>
-              </div>
+            <b-col>
+              <ul class="indust-list">
+                <li
+                  v-for="(djlist2,index) in djlist2s"
+                  :key="index"
+                >
+                  <span class="dj-bullet"><font-awesome-icon style="display:inline;" :icon="['fas', 'check']" /></span> {{ djlist2 }}
+                </li>
+              </ul>
             </b-col>
-            <b-col lg="1"></b-col>
-        </b-row>
-    </b-container-fluid>
+          </b-row>
+        </div>
+      </b-col>
+      <b-col lg="1" />
+    </b-row>
+  </b-container-fluid>
 </template>
 
 <script>
