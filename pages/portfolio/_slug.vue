@@ -18,7 +18,7 @@
       </b-row>
       <!-- First Row Description -->
       <b-row>
-        <b-col md="2"></b-col>
+        <b-col md="2" />
         <b-col md="8">
           <div class="project-description">
             <!--<time class="tiny">{{ ( new Date(post.fields.publishDate)).toDateString() }}</time>-->
@@ -36,7 +36,7 @@
             <vue-markdown>{{ post.fields.projectSummary }}</vue-markdown>
           </div>
         </b-col>
-        <b-col md="2"></b-col>
+        <b-col md="2" />
       </b-row>
       <!-- Row 2 -->
       <b-row class="p-2">

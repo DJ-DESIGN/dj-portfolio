@@ -1,12 +1,16 @@
 <template>
   <div>
     <header class="container-fluid dj-page-header">
-      <h1 class="pt-5">PORTFOLIO</h1>
+      <h1 class="pt-5">
+        PORTFOLIO
+      </h1>
     </header>
     <section class="container-fluid dj-page-section pb-5">
       <b-row>
         <b-col>
-          <h3 class="tag-title">All Projects ({{ posts.length }})</h3>
+          <h3 class="tag-title">
+            All Projects ({{ posts.length }})
+          </h3>
         </b-col>
       </b-row>
       <b-row class="pr-2 pl-2">

@@ -1,26 +1,32 @@
 <template>
   <b-container-fluid>
-    <a name="about"></a>
+    <a name="about" />
     <b-row class="about">
-      <b-col lg="1"></b-col>
+      <b-col lg="1" />
       <b-col lg="5" class="text-left pt-4">
         <floating-derek />
       </b-col>
       <b-col lg="5" class="p-3 text-left">
-        <h2 class="p-5">First, a little about myself– </h2>
+        <h2 class="p-5">
+          First, a little about myself–
+        </h2>
         <p class="text-grey">
-          I'm A User Experience, Graphic and User Interface designer with over a decade of designing and developing cohesive digital experiences for numerous brands. I am more of a binary artist than a simple front-end web developer. I've spent multiple years working within large and mid-range companies creatively building experiences that enhanced company outcomes. When not in the corporate environment I have also worked with various startup companies in multiple sectors building digital experiences while offering design solutions to keep projects moving forward.
+          I am a Visual, User Interface and User Experience designer with over a decade of designing and developing cohesive digital experiences for numerous brands. I am more of a binary artist than a simple developer. I've spent multiple years working within large and mid-range companies creatively building experiences that enhanced company outcomes. When not in the corporate environment I have also worked with various startup companies in multiple sectors building digital experiences while offering design solutions to keep projects moving forward.
         </p>
         <div class="pt-5">
-          <a class="dj-button" href="#contact"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> CONTACT ME</a>
+          <a class="dj-button" href="#contact"><font-awesome-icon :icon="['fas', 'angle-double-right']" />
+            CONTACT ME
+          </a>
         </div>
       </b-col>
-      <b-col lg="1"></b-col>
+      <b-col lg="1" />
     </b-row>
     <b-row class="what-i-do pb-5">
-      <b-col lg="1"></b-col>
+      <b-col lg="1" />
       <b-col lg="5" class="p-3 pt-5 text-left">
-        <h2 class="p-5">What I Do</h2>
+        <h2 class="p-5">
+          What I Do
+        </h2>
         <h4>See the vision. Build the experience.</h4>
         <p class="pb-4">
           I utilize stimulating visual communication, information architecture, user-friendly interfaces and wonderful digital interaction to transform basic URLs into truly unique brand experiences.
@@ -33,7 +39,7 @@
       <b-col lg="5">
         <FloatingGlasses />
       </b-col>
-      <b-col lg="1"></b-col>
+      <b-col lg="1" />
     </b-row>
   </b-container-fluid>
 </template>

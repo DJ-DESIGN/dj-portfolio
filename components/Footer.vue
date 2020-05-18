@@ -58,7 +58,7 @@
     </b-row>
     <b-row class="dj-bg-black">
       <b-col class="dj-all-rights-reserved">
-        <p>© 2019 Derek Johnston Design All rights reserved</p>
+        <p>© 2020 Derek Johnston Design All rights reserved</p>
       </b-col>
     </b-row>
     <!-- Quote Form Modal -->

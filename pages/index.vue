@@ -4,19 +4,19 @@
       <div class="dj-bg">
         <div class="dj-bg-darken">
           <b-row class="dj-reveal">
-            <b-col md="1"></b-col>
+            <b-col md="1" />
             <b-col md="10" class="p-2">
               <div class="dj-logo-hero">
                 <img
                   src="../assets/img/brand/logo/SVG/derek-johnston-design-logo.svg"
-                  />
+                >
                 <h1
                   class="pt-5">
                   {{ portfolio.fields.djAbout }}
                 </h1>
               </div>
             </b-col>
-            <b-col md="1"></b-col>
+            <b-col md="1" />
           </b-row>
         </div>
       </div>
@@ -39,16 +39,7 @@
           </div>
           <h2>Visual Design</h2>
           <p class="text-center p-2">
-            Branding– logo, color palette, identity, style guide-book.  Packaging– labels, tags, boxed, containers, foods, bottles, clothing.  Print– business cards, brochures, folders, magazine and newspaper, poster, presentations.
-          </p>
-        </b-col>
-        <b-col md="4">
-          <div class="p-2">
-            <span class="eye-con"><font-awesome-icon :icon="['fas', 'sitemap']" /></span>
-          </div>
-          <h2>User Experience Design</h2>
-          <p class="text-center p-2">
-            Static and dynamic websites, single-page web applications, information architecture, wireframing, email marketing campaigns, user engagement strategy, user flow, visual aesthetics, ecommerce.
+            Branding– logo, color palette, identity, style guide-book.  Packaging– labels, boxes, containers, food, bottles, clothing.  Print– business cards, brochures, folders, publications, poster, presentations.
           </p>
         </b-col>
         <b-col md="4">
@@ -57,7 +48,16 @@
           </div>
           <h2>User Interface Design</h2>
           <p class="text-center p-2">
-            Interactive prototyping, dynamic components, static mock-ups, single and multi-page forms, flow-chart, sitemaps, navigation, learning management systems.
+            Interactive prototyping, dynamic components, static mock-ups, single and multi-page forms, flow-chart, sitemaps, navigation, design systems.
+          </p>
+        </b-col>
+        <b-col md="4">
+          <div class="p-2">
+            <span class="eye-con"><font-awesome-icon :icon="['fas', 'sitemap']" /></span>
+          </div>
+          <h2>User Experience Design</h2>
+          <p class="text-center p-2">
+            Static websites, web applications, information architecture, wireframing, email marketing campaigns, user journeys, visual aesthetics, ecommerce.
           </p>
         </b-col>
       </b-row>
@@ -84,7 +84,10 @@
       <b-row class="pb-4">
         <b-col class="text-center">
           <div class="pb-5">
-            <nuxt-link class="dj-button" to="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </nuxt-link>
+            <nuxt-link class="dj-button" to="/portfolio">
+              <font-awesome-icon :icon="['fas', 'angle-double-right']" />
+              VIEW ALL PROJECTS
+            </nuxt-link>
           </div>
         </b-col>
       </b-row>

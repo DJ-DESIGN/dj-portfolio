@@ -10,14 +10,14 @@
 
     <b-collapse class="mx-auto" id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto fp-menu-items">
-        <b-nav-item class="dj-nav-item"><nuxt-link to="/">HOME</nuxt-link></b-nav-item>
+        <b-nav-item class="dj-nav-item" href="/">HOME</b-nav-item>
         <b-nav-item class="dj-nav-item" href="/#about">ABOUT</b-nav-item>
-        <b-nav-item class="dj-nav-item"><nuxt-link to="/portfolio">PORTFOLIO</nuxt-link></b-nav-item>
+        <b-nav-item class="dj-nav-item" href="/portfolio">PORTFOLIO</b-nav-item>
         <b-nav-item-dropdown class="dj-nav-dropdown" id="dropdown-1" text="WORK">
-          <b-dropdown-item><nuxt-link class="dj-nav-dropdown-item" to="/tags/web">Web</nuxt-link></b-dropdown-item>
-          <b-dropdown-item><nuxt-link class="dj-nav-dropdown-item" to="/logo">Logo</nuxt-link></b-dropdown-item>
-          <b-dropdown-item><nuxt-link class="dj-nav-dropdown-item" to="/tags/print">Print</nuxt-link></b-dropdown-item>
-          <b-dropdown-item><nuxt-link class="dj-nav-dropdown-item" to="/tags/branding">Branding</nuxt-link></b-dropdown-item>
+          <b-dropdown-item class="dj-nav-dropdown-item" href="/tags/web">Web</b-dropdown-item>
+          <b-dropdown-item class="dj-nav-dropdown-item" href="/logo">Logo</b-dropdown-item>
+          <b-dropdown-item class="dj-nav-dropdown-item" href="/tags/print">Print</b-dropdown-item>
+          <b-dropdown-item class="dj-nav-dropdown-item" href="/tags/branding">Branding</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item class="dj-nav-item" href="#contact"> CONTACT </b-nav-item>
       </b-navbar-nav>
