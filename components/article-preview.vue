@@ -4,27 +4,29 @@
       <b-col>
         <b-card class="mb-4 dj-portfolio-card">
           <nuxt-link
-          :to="{ name: 'portfolio-slug',
-          params: { slug: post.fields.slug }}"
-           class="btn-img"
+            :to="{ name: 'portfolio-slug',
+                   params: { slug: post.fields.slug }}"
+            class="btn-img"
           >
-          <div class="img-wrap">
-            <img
-              :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
-              :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=196&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=562&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1125&fit=fill 2000w`"
-              sizes="(min-width: 1024px) 400px, 100vw"
-              class="thumbnail"
-            />
-          </div>
+            <div class="img-wrap">
+              <img
+                :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
+                :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=196&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=562&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1125&fit=fill 2000w`"
+                sizes="(min-width: 1024px) 400px, 100vw"
+                class="thumbnail"
+              >
+            </div>
           </nuxt-link>
           <div class="dj-card-info">
             <div class="card-info-section">
               <b>Client:</b>
               <h4>
                 <nuxt-link
-                :to="{ name: 'portfolio-slug',
-                params: { slug: post.fields.slug }}"
-                class="title">{{ post.fields.client }}
+                  :to="{ name: 'portfolio-slug',
+                         params: { slug: post.fields.slug }}"
+                  class="title"
+                >
+                  {{ post.fields.client }}
                 </nuxt-link>
               </h4>
             </div>
@@ -40,19 +42,24 @@
             </div>
             <div
               class="tags">
-              <div class="title">#tags:</div>
+              <div class="title">
+                #tags:
+              </div>
               <nuxt-link
                 v-for="tag in post.fields.tags"
                 :key="tag"
                 :to="{ name: 'tags-tag', params: { tag: tag }}"
-                class="tag">{{ tag }}</nuxt-link>
+                class="tag"
+              >
+                {{ tag }}
+              </nuxt-link>
             </div>
           </div>
           <b-row class="mr-0 ml-0">
-              <b-col class="dj-bg-blue col-blue"></b-col>
-              <b-col class="dj-bg-red col-red"></b-col>
-              <b-col class="dj-bg-gray col-gray"></b-col>
-            </b-row>
+            <b-col class="dj-bg-blue col-blue" />
+            <b-col class="dj-bg-red col-red" />
+            <b-col class="dj-bg-gray col-gray" />
+          </b-row>
         </b-card>
       </b-col>
     </b-row>

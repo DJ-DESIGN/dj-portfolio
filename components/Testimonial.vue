@@ -1,25 +1,31 @@
 <template>
-    <b-container-fluid>
-        <b-row class="p-0 m-0 dj-bg-white">
-          <b-col md="1"></b-col>
-          <b-col md="5" class="dj-testimonial-conatiner">
-            <div class="dj-slide">
-              <h3><span class="quote-con-left"><font-awesome-icon :icon="['fas', 'quote-left']"/></span>As the owner of femPAQ the first thing people comment on is the packaging, the ooo's & ahhh's are always rewarding. He gave us exactly what we needed. <span class="quote-con-right"><font-awesome-icon :icon="['fas', 'quote-right']"/></span></h3>
-              <div class="whom-quoted">
-                <h2 class="pt-2">April Roy</h2>
-                <h4>CEO of femPAQ</h4>
-              </div>
-            </div>
-          </b-col>
-          <b-col md="6" class="dj-bottom-right-image">
-              <div class="dj-bottom-right-reveal">
-                <div class="dj-test-reveal-text-right">
-                  <h2 class="dj-3d-text">SEE<br>THE<br>VISION</h2>
-                </div>
-              </div>
-          </b-col>
-        </b-row>
-    </b-container-fluid>
+  <b-container-fluid>
+    <b-row class="p-0 m-0 dj-bg-white">
+      <b-col md="1" />
+      <b-col md="5" class="dj-testimonial-conatiner">
+        <div class="dj-slide">
+          <h3><span class="quote-con-left"><font-awesome-icon :icon="['fas', 'quote-left']" /></span>As the owner of femPAQ the first thing people comment on is the packaging, the ooo's & ahhh's are always rewarding. He gave us exactly what we needed. <span class="quote-con-right"><font-awesome-icon :icon="['fas', 'quote-right']"/></span></h3>
+          <div class="whom-quoted">
+            <h2 class="pt-2">
+              April Roy
+            </h2>
+            <h4>CEO of femPAQ</h4>
+          </div>
+        </div>
+      </b-col>
+      <b-col md="6" class="dj-bottom-right-image">
+        <div class="dj-bottom-right-reveal">
+          <div class="dj-test-reveal-text-right">
+            <h2 class="dj-3d-text">
+              SEE<br>
+              THE<br>
+              VISION
+            </h2>
+          </div>
+        </div>
+      </b-col>
+    </b-row>
+  </b-container-fluid>
 </template>
 
 <script>

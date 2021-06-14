@@ -1,9 +1,11 @@
 <template>
   <div class="container-fluid">
-    <a name="contact"></a>
+    <a name="contact" />
     <b-row>
       <b-col class="dj-bg-blue dj-contact-container" xl="6">
-        <h3 class="p-2">Get in touch.</h3>
+        <h3 class="p-2">
+          Get in touch.
+        </h3>
         <div class="dj-contact-form">
           <form
             name="dj-contact"
@@ -11,46 +13,54 @@
             netlify-honeypot="bot-field"
             action="/thank-you"
             netlify
-            >
-              <b-row>
-                <b-col xl="6">
-                  <input type="hidden" name="form-name" value="dj-contact" />
-                  <p>
-                    <input class="fp-form-group-input" type="text" name="name" placeholder="Enter your name:" />
-                  </p>
-                  <p>
-                    <input class="fp-form-group-input" type="email" name="email" placeholder="Enter your email:" required />
-                  </p>
-                  <p class="dj-white-text">* I don't share your information with 3rd parties.</p>
-                </b-col>
-                <b-col xl="6">
-                  <p>
-                    <textarea class="fp-message" name="message" rows="3" placeholder="Enter your message:" ></textarea>
-                  </p>
-                  <p class="hidden">
-                    <label>Don’t fill this out:
-                      <input name="bot-field">
-                    </label>
-                  </p>
-                  <p>
-                    <b-button class="btn-block rounded-0 dj-sumbit-btn" type="submit" >Submit</b-button>
-                  </p>
-                </b-col>
-              </b-row>
-            </form>
-          </div>
+          >
+            <b-row>
+              <b-col xl="6">
+                <input type="hidden" name="form-name" value="dj-contact">
+                <p>
+                  <input class="fp-form-group-input" type="text" name="name" placeholder="Enter your name:">
+                </p>
+                <p>
+                  <input class="fp-form-group-input" type="email" name="email" placeholder="Enter your email:" required>
+                </p>
+                <p class="dj-white-text">
+                  * I don't share your information with 3rd parties.
+                </p>
+              </b-col>
+              <b-col xl="6">
+                <p>
+                  <textarea class="fp-message" name="message" rows="3" placeholder="Enter your message:" />
+                </p>
+                <p class="hidden">
+                  <label>Don’t fill this out:
+                    <input name="bot-field">
+                  </label>
+                </p>
+                <p>
+                  <b-button class="btn-block rounded-0 dj-sumbit-btn" type="submit">
+                    Submit
+                  </b-button>
+                </p>
+              </b-col>
+            </b-row>
+          </form>
+        </div>
       </b-col>
       <b-col class="dj-bg-red dj-quote-container" xl="4">
         <div class="quote-box">
-          <h3 class="dj-white-text p-2">Need a quote?</h3>
-          <b-button class="btn-block rounded-0 dj-quote-btn" v-b-modal.quote-modal>
-            <font-awesome-icon :icon="['fas', 'angle-double-right']"/> Yes I would please </b-button>
+          <h3 class="dj-white-text p-2">
+            Need a quote?
+          </h3>
+          <b-button v-b-modal.quote-modal class="btn-block rounded-0 dj-quote-btn">
+            <font-awesome-icon :icon="['fas', 'angle-double-right']" /> Yes I would please </b-button>
         </div>
       </b-col>
       <b-col class="dj-bg-gray dj-foot-last" xl="2">
         <div class="dj-logo-foot">
           <h1>Derek Johnston <span class="dj-red-text">Design</span></h1>
-          <h4 class="pt-2">Contact:</h4>
+          <h4 class="pt-2">
+            Contact:
+          </h4>
           <p><a href="mailto:dj@derekjohnston.com">dj@derekjohnston.com</a></p>
           <p>(312) 608-4894</p>
         </div>
@@ -68,7 +78,7 @@
       size="lg"
       title="Quote Request"
       hide-footer
-      >
+    >
       <div class="dj-quote-form">
         <p>Please try to fill out as many fields as possible. Thanks</p>
         <form
@@ -77,46 +87,52 @@
           netlify-honeypot="bot-field"
           action="/thank-you"
           netlify
-          >
+        >
           <b-row>
             <b-col>
-              <input type="hidden" name="form-name" value="dj-quote" />
+              <input type="hidden" name="form-name" value="dj-quote">
               <p>
-                  <input type="text" name="name" placeholder="Name:" required />
+                <input type="text" name="name" placeholder="Name:" required>
               </p>
               <p>
-                  <input type="text" name="company" placeholder="Company:" />
+                <input type="text" name="company" placeholder="Company:">
               </p>
               <p>
-                  <input type="email" name="email" placeholder="Contact email:" required />
+                <input type="email" name="email" placeholder="Contact email:" required>
               </p>
-              <p class="dj-gray-text">* I don't share your information with 3rd parties.</p>
-              <h6 class="pt-2 dj-blue-text">Project Type:</h6>
+              <p class="dj-gray-text">
+                * I don't share your information with 3rd parties.
+              </p>
+              <h6 class="pt-2 dj-blue-text">
+                Project Type:
+              </h6>
               <p>
                 <b-form-checkbox-group
-                  type="checkbox"
                   v-model="selected"
+                  type="checkbox"
                   :options="options"
                   name="projectType"
-                ></b-form-checkbox-group>
+                />
               </p>
               <p>
-                  <input type="text" name="deadline" placeholder="How soon do you need this?" />
+                <input type="text" name="deadline" placeholder="How soon do you need this?">
               </p>
               <p>
-                  <textarea name="project-info" rows="4" placeholder="Describe your project..." required ></textarea>
+                <textarea name="project-info" rows="4" placeholder="Describe your project..." required></textarea>
               </p>
               <p class="hidden">
-                  <label>Don’t fill this out:
+                <label>Don’t fill this out:
                   <input name="bot-field">
-                  </label>
+                </label>
               </p>
             </b-col>
           </b-row>
           <b-row>
             <b-col>
               <p>
-                <b-button class="btn-block rounded-0 dj-sumbit-btn" type="submit" >Submit</b-button>
+                <b-button class="btn-block rounded-0 dj-sumbit-btn" type="submit">
+                  Submit
+                </b-button>
               </p>
             </b-col>
           </b-row>

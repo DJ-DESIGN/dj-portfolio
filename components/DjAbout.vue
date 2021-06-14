@@ -11,7 +11,7 @@
           First, a little about myself–
         </h2>
         <p class="text-grey">
-          I am a Visual, User Interface and User Experience designer with over a decade of designing and developing cohesive digital experiences for numerous brands. I am more of a binary artist than a simple developer. I've spent multiple years working within large and mid-range companies creatively building experiences that enhanced company outcomes. When not in the corporate environment I have also worked with various startup companies in multiple sectors building digital experiences while offering design solutions to keep projects moving forward.
+          I am a product designer with over a decade of designing and developing cohesive digital experiences and products for numerous brands. I am more of a binary artist than a simple designer. I've spent multiple years working within large and mid-range companies creatively building experiences that enhanced company outcomes. When not in the corporate environment I have also worked with various startup companies and small businesses in multiple sectors while offering design solutions to keep projects moving forward.
         </p>
         <div class="pt-5">
           <a class="dj-button" href="#contact"><font-awesome-icon :icon="['fas', 'angle-double-right']" />

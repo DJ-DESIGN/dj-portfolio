@@ -12,6 +12,7 @@
                 >
                 <h1
                   class="pt-5">
+                  <!-- Product designer that codes. -->
                   {{ portfolio.fields.djAbout }}
                 </h1>
               </div>
@@ -38,27 +39,27 @@
             <span class="eye-con"><font-awesome-icon :icon="['fas', 'eye']" /></span>
           </div>
           <h2>Visual Design</h2>
-          <p class="text-center p-2">
-            Branding– logo, color palette, identity, style guide-book.  Packaging– labels, boxes, containers, food, bottles, clothing.  Print– business cards, brochures, folders, publications, poster, presentations.
-          </p>
+          <h5 class="text-center p-2">
+            Branding, Graphics, Style guides, Packaging, Print.
+          </h5>
         </b-col>
         <b-col md="4">
           <div class="p-2">
             <span class="eye-con"><font-awesome-icon :icon="['fas', 'th']" /></span>
           </div>
-          <h2>User Interface Design</h2>
-          <p class="text-center p-2">
-            Interactive prototyping, dynamic components, static mock-ups, single and multi-page forms, flow-chart, sitemaps, navigation, design systems.
-          </p>
+          <h2>UI/UX Design</h2>
+          <h5 class="text-center p-2">
+            Research, Wireframes, Lofi and Hifi Mockups, Interactive Prototypes, User Journies.
+          </h5>
         </b-col>
         <b-col md="4">
           <div class="p-2">
             <span class="eye-con"><font-awesome-icon :icon="['fas', 'sitemap']" /></span>
           </div>
-          <h2>User Experience Design</h2>
-          <p class="text-center p-2">
-            Static websites, web applications, information architecture, wireframing, email marketing campaigns, user journeys, visual aesthetics, ecommerce.
-          </p>
+          <h2>Development</h2>
+          <h5 class="text-center p-2">
+            Web Applications, Brand Websites, Landing Pages, Microsites.
+          </h5>
         </b-col>
       </b-row>
     </div>
