@@ -52,7 +52,7 @@
             Need a quote?
           </h3>
           <b-button v-b-modal.quote-modal class="btn-block rounded-0 dj-quote-btn">
-            <font-awesome-icon :icon="['fas', 'angle-double-right']" /> Yes I would please </b-button>
+            <font-awesome-icon :icon="['fas', 'angle-double-right']" /> Get Quote </b-button>
         </div>
       </b-col>
       <b-col class="dj-bg-gray dj-foot-last" xl="2">
@@ -68,7 +68,7 @@
     </b-row>
     <b-row class="dj-bg-black">
       <b-col class="dj-all-rights-reserved">
-        <p>© 2020 Derek Johnston Design All rights reserved</p>
+        <p>© 2021 Derek Johnston Design All rights reserved</p>
       </b-col>
     </b-row>
     <!-- Quote Form Modal -->

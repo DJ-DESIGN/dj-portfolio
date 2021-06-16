@@ -49,7 +49,7 @@
           </div>
           <h2>UI/UX Design</h2>
           <h5 class="text-center p-2">
-            Research, Wireframes, Lofi and Hifi Mockups, Interactive Prototypes, User Journies.
+            Research, Wireframes, Lofi and Hifi Mockups, Interactive Prototypes, User Journeys.
           </h5>
         </b-col>
         <b-col md="4">
