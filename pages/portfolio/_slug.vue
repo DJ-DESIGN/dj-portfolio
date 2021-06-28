@@ -43,16 +43,16 @@
             <div class="title">
               Role:
             </div>
-            <vue-markdown>
+            <p>
               {{ post.fields.role }}
-            </vue-markdown>
+            </p>
             <div class="title">
               Tools Used:
             </div>
-            <vue-markdown>
+            <p>
               {{ post.fields.tools }}
-            </vue-markdown>
-            <div class="title">
+            </p>
+            <div class="title py-4 text-primary">
               Project Summary:
             </div>
             <vue-markdown>

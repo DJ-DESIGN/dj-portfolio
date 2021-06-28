@@ -20,7 +20,7 @@
       <b-row class="pt-5">
         <b-col class="text-center">
           <div class="pt-5">
-            <nuxt-link class="dj-button" to="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']"/> VIEW ALL PROJECTS </nuxt-link>
+            <nuxt-link class="dj-button" to="/portfolio"><font-awesome-icon :icon="['fas', 'angle-double-right']" /> VIEW ALL PROJECTS </nuxt-link>
           </div>
         </b-col>
       </b-row>

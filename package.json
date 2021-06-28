@@ -1,7 +1,7 @@
 {
   "name": "dj-portfolio",
-  "version": "1.0.0",
-  "description": "Visual | UX | UI",
+  "version": "1.0.1",
+  "description": "Product Designer",
   "author": "Derek Johnston",
   "private": true,
   "scripts": {
@@ -21,22 +21,24 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "aos": "^2.3.4",
     "axios": "^0.21.1",
-    "babel-loader": "^8.1.0",
     "babel-runtime": "^6.26.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
     "contentful": "^8.3.7",
+    "css-what": "^5.0.1",
     "eslint-formatter-friendly": "^7.0.0",
-    "eslint-loader": "^3.0.0",
     "eslint-plugin-vue": "^5.2.3",
     "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
+    "node": "^16.3.0",
+    "normalize-url": "^6.1.0",
     "nuxt": "^2.2.0",
     "popper.js": "^1.16.0",
     "portal-vue": "^2.1.6",
+    "postcss-normalize-url": "^4.0.1",
     "sass": "^1.23.0-module.beta.1",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^10.1.1",
     "serialize-javascript": "^5.0.1",
+    "trim-newlines": "^3.0.1",
     "vue-easy-slider": "^5.3.2",
     "vue-eslint-parser": "^6.0.5",
     "vue-functional-data-merge": "^3.1.0",
@@ -47,10 +49,16 @@
     "vue2-animate": "^2.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.2.2",
     "eslint": "^6.8.0",
-    "eslint-plugin-nuxt": ">=0.4.2"
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "node-sass": "^6.0.1",
+    "webpack": "^4.46.0"
   }
 }

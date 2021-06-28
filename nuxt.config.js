@@ -1,7 +1,7 @@
 const config = require('./.contentful.json')
 
 export default {
-  mode: 'universal',
+//  mode: 'universal',
   // ...
   env: {
     CTF_SPACE_ID: config.CTF_SPACE_ID,
@@ -101,7 +101,7 @@ export default {
       '/portfolio/fempaq',
       '/portfolio/cboe',
       '/portfolio/poplar-grove',
-      '/portfolio/trace-strategies',
+      '/portfolio/dillards',
       '/portfolio/the-landing',
       '/portfolio/mcghee-insurance-agency',
       '/portfolio/alabama-opportunity-scholarship-fund',
