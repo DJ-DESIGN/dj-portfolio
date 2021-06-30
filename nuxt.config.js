@@ -99,12 +99,14 @@ export default {
       '/tags/print',
       '/tags/feature',
       '/portfolio/fempaq',
-      '/portfolio/cboe',
-      '/portfolio/poplar-grove',
       '/portfolio/dillards',
+      '/portfolio/pcms',
+      '/portfolio/poplar-grove',
+      '/portfolio/trace-strategies',
       '/portfolio/the-landing',
       '/portfolio/mcghee-insurance-agency',
       '/portfolio/alabama-opportunity-scholarship-fund',
+      '/portfolio/cboe',
       '/portfolio/break-and-run'
     ]
   }
